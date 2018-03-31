@@ -714,4 +714,51 @@ class Client extends GuzzleClient
 
         return $cmd->getResult();
     }
+    /**
+     * Retrieves a list of API users and a count of each error type they have encountered in the current day
+     *
+     * @link http://developers.marketo.com/rest-api/lead-database/
+     *
+     * @return Response
+     */
+    private function getStatsErrors() 
+    {
+        return $this->getResult('getStatsErrors', false, false, $returnRaw);
+    }
+
+    /**
+     * Returns a list of API users and a count of each error type they have encountered in the past 7 days
+     *
+     * @link http://developers.marketo.com/rest-api/lead-database/
+     *
+     * @return Response
+     */
+    private function getStatsErrorsLastSevenDays() 
+    {
+        return $this->getResult('getStatsErrorsLastSevenDays', false, false, $returnRaw);
+    }
+
+    /**
+     * Returns a list of API users and the number of calls they have consumed for the day
+     *
+     * @link http://developers.marketo.com/rest-api/lead-database/
+     *
+     * @return Response
+     */
+    private function getStatsUsage() 
+    {
+        return $this->getResult('getStatsUsage', false, false, $returnRaw);
+    }
+
+    /**
+     * Returns a list of API users and the number of calls they have consumed in the past 7 days
+     *
+     * @link http://developers.marketo.com/rest-api/lead-database/
+     *
+     * @return Response
+     */
+    private function getStatsUsageLastSevenDays() 
+    {
+        return $this->getResult('getStatsUsageLastSevenDays', false, false, $returnRaw);
+    }
 }
