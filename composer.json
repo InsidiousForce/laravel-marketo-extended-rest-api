@@ -5,6 +5,7 @@
     "require": {
         "php": ">=5.3.3",
         "guzzle/guzzle": "~3.8",
+        "guzzlehttp/guzzle": "^7.5.1",
         "commerceguys/guzzle-oauth2-plugin": "~1.0"
     },
     "replace": {
