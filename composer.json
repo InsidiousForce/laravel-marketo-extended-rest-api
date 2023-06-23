@@ -1,5 +1,5 @@
 {
-    "name": "infusionweb/laravel-marketo-extended-rest-client",
+    "name": "insidiousforce/laravel-marketo-extended-rest-client",
     "description": "A PHP client for the Marketo.com REST API",
     "license": "MIT",
     "require": {
@@ -7,9 +7,6 @@
         "guzzle/guzzle": "~3.8",
         "guzzlehttp/guzzle": "^7.5.1",
         "commerceguys/guzzle-oauth2-plugin": "~1.0"
-    },
-    "replace": {
-        "infusionweb/laravel-marketo-extended-rest-client": "0.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0"
@@ -21,7 +18,7 @@
     },
     "authors": [
         {
-            "name": "Infusionweb"
+            "name": "InsidiousForce"
         }
     ]
 }
